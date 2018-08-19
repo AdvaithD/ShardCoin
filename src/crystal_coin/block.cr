@@ -8,6 +8,14 @@ module ShardCoin
       Block.new(data: data, previous_hash: "0")
     end
 
+    def self.next(previous_node, data = "Transaction Data")
+      Block.new(
+        data: "Transaction data number (#{previous_node.index + 1})",
+        index: previous_node.index + 1,
+        previous_hash: previous_hash.hash
+      )
+    end
+
     def initialize(index = 0, data = "data", previous_hash = "hash")
       @data = data
       @index = index
