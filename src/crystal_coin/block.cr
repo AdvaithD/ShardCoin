@@ -4,6 +4,10 @@ module ShardCoin
   class Block
     property current_hash : String
 
+    def self.first(data = "Genesis Block")
+      Block.new(data: data, previous_hash: "0")
+    end
+
     def initialize(index = 0, data = "data", previous_hash = "hash")
       @data = data
       @index = index
@@ -20,4 +24,5 @@ module ShardCoin
   end
 end
 
-puts ShardCoin::Block.new(data: "Statoshi Crystal").current_hash
+p ShardCoin::Block.first
+# puts ShardCoin::Block.new(data: "Statoshi Crystal").current_hash
