@@ -24,4 +24,6 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [your-github-user](https://github.com/your-github-user) Advaith Doosa - creator, maintainer
+- Each `block` is stored with a timestamp and index.
+- Each `block` has its self identifying hash
+  - Hash of the block's (`index` `timestamp` and `data`) and previous hash
