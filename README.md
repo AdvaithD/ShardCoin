@@ -33,5 +33,3 @@ TODO: Write development instructions here
 
 `#<ShardCoin::Block:0x104092f00 @current_hash="96c0c2705160176d23d9cb98f47d96d7478a439166580411b4a86eb920fc17e1", @data="Genesis Block", @index=0, @timestamp=2018-08-19 03:45:25.987269000 -04:00 Local, @previous_hash="0">`
 
-Key concept:
-A block can't be modified without changing the hasb of every consecutive block
